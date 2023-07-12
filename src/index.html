@@ -3,15 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Sample website">
+  <meta name="keywords" content="TTEC, Sample Website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-security-policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Sample website</title>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+  <div>
+    <form>
+      <h1>Sign up</h1>
+      <label>Company Name:</label><br>
+      <input type="text" id="cName" value="TTEC Digital"><br>
+      <label>Employee Name:</label><br>
+      <input type="text" id="eName" value="Siva"><br><br>
+      <input type="submit" value="Submit"><br><br>
+      <a href="./documents/HelpDocument.pdf"
+        rel="noopener noreferrer" target="_blank">Help document</a>
+    </form>
+  </div>
 </body>
 
 </html>
