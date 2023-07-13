@@ -12,18 +12,19 @@
 </head>
 
 <body>
-  <div>
-    <form>
-      <h1>Sign up</h1>
-      <label>Company Name:</label><br>
-      <input type="text" id="cName" value="TTEC Digital"><br>
-      <label>Employee Name:</label><br>
-      <input type="text" id="eName" value="Siva"><br><br>
-      <input type="submit" value="Submit"><br><br>
-      <a href="./documents/HelpDocument.pdf"
-        rel="noopener noreferrer" target="_blank">Help document</a>
-    </form>
-  </div>
+  <form>
+    <div class="container">
+      <h2>Sign up</h2>
+      <label for="ename"><b>Employee Name</b></label>
+      <input type="text" placeholder="Enter Employee Name" name="ename">
+      <label for="cname"><b>Company Name</b></label>
+      <input type="text" placeholder="Enter Company Name" name="cname">
+    </div>
+    <div class="container">
+      <button type="submit">Submit</button>
+      <span class="hdoc"><a href="./documents/HelpDocument.pdf" rel="noopener noreferrer" target="_blank">Help document</a></span>
+    </div>
+  </form>
 </body>
 
 </html>
