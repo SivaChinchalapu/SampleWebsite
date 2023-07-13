@@ -1,7 +1,33 @@
 {
-  "name": "vanilla-basic",
+  "name": "samplewebsite",
   "version": "1.0.0",
-  "scripts": { 
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+  "scripts": {
+    "start": "sirv ./src public --cors --single --no-clear --port 8000",
+    "stylelint": "stylelint src/*.css"
+  },
+  "devDependencies": {
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-no-browser-hacks": "^1.2.1"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-no-browser-hacks/lib"
+    ],
+    "rules": {
+      "no-duplicate-selectors": true,
+      "color-hex-length": "long",
+      "property-no-unknown": true,
+      "plugin/no-browser-hacks": [
+        true,
+        {
+          "browsers": [
+            "last 2 versions",
+            "ie >=8"
+          ]
+        }
+      ]
+    }
   }
 }
