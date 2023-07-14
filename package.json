@@ -2,5 +2,18 @@
   "name": "samplewebsite",
   "version": "1.0.0",
   "scripts": {
+    "lint:html": "linthtml src/**/*.html",
+    "lint:style": "stylelint src/**/*.css",
+    "prettier:fix": "prettier --write src/",
+    "prettier:verify": "prettier --check src/",
+    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+  },
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.5",
+    "prettier": "^3.0.0",
+    "sirv-cli": "^2.0.2",
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-no-browser-hacks": "^1.2.1"
   }
 }

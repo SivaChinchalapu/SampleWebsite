@@ -1,31 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sample website" />
+    <meta name="keywords" content="TTEC, Sample Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="content-security-policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Sample website</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Sample website">
-  <meta name="keywords" content="TTEC, Sample Website">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-security-policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <title>Sample website</title>
-</head>
-
-<body>
-  <form>
-    <div class="container">
-      <h2>Sign up</h2>
-      <label for="ename"><strong>Employee Name</strong></label>
-      <input type="text" placeholder="Enter Employee Name" name="ename">
-      <label for="cname"><strong>Company Name</strong></label>
-      <input type="text" placeholder="Enter Company Name" name="cname">
-    </div>
-    <div class="container">
-      <button type="submit">Submit</button>
-      <span class="hdoc"><a href="./documents/HelpDocument.pdf" rel="noopener noreferrer" target="_blank">Help
-          document</a></span>
-    </div>
-  </form>
-</body>
-
+  <body>
+    <form>
+      <div class="container">
+        <h2>Sign up</h2>
+        <label for="ename"><strong>Employee Name</strong></label>
+        <input type="text" placeholder="Enter Employee Name" name="ename" />
+        <label for="cname"><strong>Company Name</strong></label>
+        <input type="text" placeholder="Enter Company Name" name="cname" />
+      </div>
+      <div class="container">
+        <button type="submit">Submit</button>
+        <span class="hdoc"
+          ><a
+            href="./documents/HelpDocument.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Help document</a
+          ></span
+        >
+      </div>
+    </form>
+  </body>
 </html>
