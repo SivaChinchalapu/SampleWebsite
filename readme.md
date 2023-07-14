@@ -10,6 +10,9 @@ Below are the steps to be followed by developers to make changes and run the cod
 2. Git
 3. Visual Studio Code
 
+### Account access
+The developer should have access to GitHub
+
 ### Running the app locally
 1. Open the code in VS Code IDE
 2. Open a new terminal
