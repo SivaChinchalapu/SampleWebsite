@@ -16,5 +16,6 @@ The developer should have access to GitHub
 ### Running the app locally
 1. Open the code in VS Code IDE
 2. Open a new terminal
-3. Run the command 'npm run start' from the termial
-4. This will start an app instance at 'https://localhost:8000', which can be browsed locally
+3. For first time usage run 'npm install' from the terminal
+4. Run the command 'npm run start' from the termial
+5. This will start an app instance at 'https://localhost:8000', which can be browsed locally
